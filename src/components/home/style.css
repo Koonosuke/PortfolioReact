@@ -1,30 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ベースリセット */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ベーススタイル */
 body {
   height: 100vh;
-  margin: 0; /* デフォルトのマージンをリセット */
-  background: url("./assets/saru.jpg"); /* 画像のパスを指定 */
-  background-size: cover; /* 画像がコンテナを覆うようにサイズ調整 */
-  background-position: center; /* 画像を中央に配置 */
-  background-attachment: fixed; /* スクロールしても背景が固定される */
-  background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
-  /*background-color: #5fb1a3; /* 画像が読み込まれる前の背景色 */
+  margin: 0;
+  background: url("./assets/saru.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
+/* ナビゲーション */
 .navigation {
   position: relative;
-  /* height: 500px; 最初はこれ*/
   height: 100vh;
-  /* width: 300px; 最初はこれ*/
   width: 70px;
   background-color: #4d4c86;
   box-shadow: 10px 0 0 #c77946;
@@ -73,24 +68,22 @@ body {
   display: flex;
 }
 
-/* あとで */
 .navigation ul li.active a::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  /* background-color: red; */
   top: -30px;
   right: 0;
   border-radius: 50%;
   box-shadow: 15px 15px 0 #c77946;
 }
+
 .navigation ul li.active a::after {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  /* background-color: red; */
   top: 60px;
   right: 0;
   border-radius: 50%;
@@ -116,31 +109,41 @@ body {
   white-space: nowrap;
 }
 
+/* ヒーローセクション */
 .hero {
-  height: 100vh;
+  height: auto;
   width: 100%;
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Added background color for readability */
 }
+
 .button-container {
   display: flex;
-  flex-wrap: wrap; /* ボタンが折り返すようにする */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px; /* ボタン間の間隔を調整 */
-  background: rgba(255, 255, 255, 0.8); /* ボタンの背後に背景色を設定 */
-  padding: 20px; /* ボタンとページ端の余白を設定 */
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
   border-radius: 10px;
 }
+
 a.button {
   display: inline-block;
-  color: #fff; /* テキスト色を白に変更 */
+  color: #fff;
   width: 150px;
   height: 150px;
-  line-height: 150px; /* ラインの高さも変更 */
+  line-height: 150px;
   font-size: 15px;
   border-radius: 50%;
   text-align: center;
   overflow: hidden;
   font-weight: bold;
-  background: #8db600; /* ボタンの背景色を設定 */
+  background: #8db600;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
   box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5),
     0 2px 2px rgba(0, 0, 0, 0.19);
@@ -148,8 +151,9 @@ a.button {
   text-decoration: none;
   transition: all 0.2s;
 }
+
 a.button:hover {
-  background: #7f9939; /* ホバー時の背景色を変更 */
+  background: #7f9939;
 }
 
 a.button:active {
@@ -207,6 +211,7 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
+/* コンテンツセクション */
 .content {
   padding-top: 230px;
 }
@@ -242,6 +247,7 @@ h4 {
   font-size: 20px;
 }
 
+/* ニュースレター */
 .newslatter form {
   width: 380px;
   max-width: 100%;
@@ -272,6 +278,7 @@ h4 {
   cursor: pointer;
 }
 
+/* アバウトセクション */
 .about {
   width: 100%;
   padding: 100px 0;
@@ -317,6 +324,7 @@ h4 {
   margin-bottom: 45px;
 }
 
+/* ボタン */
 button {
   background-color: lightseagreen;
   color: white;
@@ -334,6 +342,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* サービスセクション */
 .service {
   background: #101010;
   width: 100%;
@@ -352,10 +361,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  flex-wrap: wrap;
 }
 
 .card {
-  height: 420px; /* ボタンの高さを統一するために適切な値を設定 */
+  height: 420px;
   width: 365px;
   background-color: #191919;
   padding: 20px 35px;
@@ -366,14 +376,14 @@ button:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* テキストとボタンを均等に配置する */
+  justify-content: space-between;
 }
 
 .pra {
   color: #fcfc;
   font-size: 16px;
   line-height: 25px;
-  margin-bottom: 10px; /* ボタンとテキストの間隔を調整 */
+  margin-bottom: 10px;
 }
 
 .pra .button {
@@ -407,14 +417,15 @@ h5 {
   margin-bottom: 15px;
 }
 
+/* コンタクトセクション */
 .contact {
   width: 100%;
   height: 500px;
   background: #191919;
   display: flex;
-  align-items: center; /* 縦方向の中央揃え */
-  justify-content: center; /* 横方向の中央揃え */
-  text-align: center; /* テキストの中央揃え */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .contact p {
@@ -424,6 +435,7 @@ h5 {
   margin-bottom: 25px;
 }
 
+/* ソーシャルメディア */
 .socialEffect__box .button-two {
   background-color: lightseagreen;
   color: rgb(242, 243, 245);
@@ -436,9 +448,9 @@ h5 {
 }
 
 .socialEffect__box .button-two:hover {
-  background-color: #6aeed8; /* 黄緑色 */
-  border: 2px solid #adff2f; /* 黄緑色 */
-  color: black; /* テキスト色が白だと読みにくいので、黒に変更 */
+  background-color: #6aeed8;
+  border: 2px solid #adff2f;
+  color: black;
   cursor: pointer;
 }
 
@@ -446,7 +458,6 @@ footer {
   position: relative;
   width: 100%;
   height: 400px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -471,7 +482,6 @@ footer {
   z-index: 1;
   color: #bfbfbf;
   font-size: 1.6rem;
-
   transition: transform ease-out 0.2s;
 }
 
@@ -484,6 +494,7 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
 .socialEffect__box li {
   display: inline-block;
 }
@@ -500,9 +511,11 @@ footer {
   z-index: -1;
   transform: scale(0.12);
 }
+
 .fab.fa-instagram {
   display: inline-block;
 }
+
 .icon-instagram {
   background: radial-gradient(
       circle farthest-corner at 32% 106%,
@@ -514,6 +527,7 @@ footer {
     ),
     linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 }
+
 .icon-instagram:hover {
   background: radial-gradient(
       circle farthest-corner at 32% 106%,
@@ -525,4 +539,96 @@ footer {
     ),
     linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
   transform: scale(0.9);
+}
+
+/* スマホ対応メディアクエリ */
+@media (max-width: 768px) {
+  .navigation {
+    width: 100px;
+    height: auto;
+  }
+
+  .navigation:hover {
+    width: 100px;
+  }
+
+  .navigation ul li a .icon {
+    min-width: 35px;
+  }
+
+  .navigation ul li a .title {
+    font-size: 14px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content .body {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content .body img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .newslatter form input:first-child {
+    padding: 15px 50px 15px 15px;
+  }
+
+  .newslatter form input:last-child {
+    top: 0;
+    right: 0;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact {
+    height: auto;
+    padding: 20px;
+  }
+
+  .contact p {
+    font-size: 24px;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px;
+  }
 }

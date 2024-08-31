@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeButton = () => (
   <div className="button-container">
-    <a href="/" className="button" id="selfIntroButton">
+    <a href="/PortfolioReact/" className="button" id="selfIntroButton">
       ホームに戻る
     </a>
   </div>
