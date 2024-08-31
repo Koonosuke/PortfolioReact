@@ -3,9 +3,16 @@ import "./style.css";
 function Footer() {
   return (
     <footer>
-      <p>Instagram acount</p>
-      <p>Please follow me</p>
+      <div className="socialEffect__box">
+        <p>Xアカウントはこちら⇩⇩⇩⇩</p>
+        <a href="https://twitter.com/@kounosu761021" className="button-two">
+          お問い合わせ
+        </a>
+      </div>
+
       <ul className="socialEffect__box">
+        <p>Instagram acount</p>
+        <p>Please follow me</p>
         <li>
           <a
             className="socialEffect__link icon-instagram"

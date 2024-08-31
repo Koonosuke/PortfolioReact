@@ -9,22 +9,6 @@ function Service() {
       </div>
       <div className="box">
         <div className="card">
-          <i className="fas fa-bars"> </i>
-          <h5>Linuxって何？</h5>
-          <div className="pra">
-            <p>
-              Linuxなにができるかを簡単に解説！
-              ここではDockerを使ってLinuxの環境構築をしてみよう👍
-              コマンドの使い方ものってます
-            </p>
-            <p style={{ textAlign: "center" }}>
-              <Link to="/linux" className="button">
-                もっと読む
-              </Link>
-            </p>
-          </div>
-        </div>
-        <div className="card">
           <i className="fas fa-user"> </i>
           <h5>PHP勉強中</h5>
           <div className="pra">
@@ -35,21 +19,6 @@ function Service() {
             </p>
             <p style={{ textAlign: "center" }}>
               <Link to="/PHP" className="button">
-                もっと読む
-              </Link>
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <i className="fas fa-user"> </i>
-          <h5>Webサーバの基礎</h5>
-          <div className="pra">
-            <p>
-              virtualbox（CentOS）を使って、Webサーバの仕組みを0から学んでいきます。
-              <br />
-            </p>
-            <p style={{ textAlign: "center" }}>
-              <Link to="/OS" className="button">
                 もっと読む
               </Link>
             </p>
@@ -74,17 +43,52 @@ function Service() {
 
         <div className="card">
           <i className="fas fa-user"> </i>
-          <h5>React,Node.jsの開発の基礎</h5>
+          <h5>React,Node.jsでSNSアプリ制作</h5>
           <div className="pra">
             <p>
               ReactとNode.js初心者がSNSのアプリ制作にチャレンジ(それぞれの基礎入門が終わった後)
               <br />
             </p>
             <p style={{ textAlign: "center" }}>
-              <a href="index11.html" className="button">
+              <Link to="/SNS" className="button">
                 もっと読む
-              </a>
+              </Link>
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="service">
+        <div className="box">
+          <div className="card">
+            <i className="fas fa-user"> </i>
+            <h5>Node.js/Vue.jsで高齢者の見守りアプリを作ってみた</h5>
+            <div className="pra">
+              <p>
+                7DaysインターンでNode.jsのAPI作成、AWSも使用
+                <br />
+              </p>
+              <p style={{ textAlign: "center" }}>
+                <Link to="/Elder" className="button">
+                  もっと読む
+                </Link>
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <i className="fas fa-user"> </i>
+            <h5>M5Core2を使って、ドアの動作検知をlineに送ってみた</h5>
+            <div className="pra">
+              <ul>
+                加速度モジュールを使用してドアの動きを検知、ついでにその時の温度湿度もlineに通知
+                <br />
+              </ul>
+              <p style={{ textAlign: "center" }}>
+                <Link to="/IoT" className="button">
+                  もっと読む
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ function Hero() {
             <h1>
               Kounosuke<span>Site</span>
             </h1>
-            <h3>制作言語：HTML/CSS/React</h3>
+            <h3>制作言語：React/CSS</h3>
           </div>
           <img src="BB81.png" alt="" />
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Gitt from "./components/Gitt/Gitt";
 import About from "./components/home/About";
 import Contact from "./components/home/Contact";
 import Footer from "./components/home/Footer";
 import Header from "./components/home/Header";
 import Hero from "./components/home/Hero";
-import Portfolio from "./components/home/Portfolio";
 import Service from "./components/home/Service";
 import Intern from "./components/Intern/Intern";
 import JavaTodo from "./components/JavaTodo/JavaTodo";
@@ -14,6 +14,9 @@ import Linux from "./components/linuxx/Linux";
 import Scroll from "./components/linuxx/Scroll";
 import OS from "./components/OS/OS";
 import PHPIntro from "./components/PHP/PHPIntro";
+import SNSAPP from "./components/SNSapp/SNSAPP";
+import Elder from "./components/Elder/Elder";
+import IoT from "./components/IoT/IoT";
 
 function App() {
   return (
@@ -27,7 +30,6 @@ function App() {
               <Hero />
               <About />
               <Service />
-              <Portfolio />
               <Contact />
               <Footer />
             </>
@@ -80,6 +82,46 @@ function App() {
               <HomeButton />
               <Scroll />
               <JavaTodo />
+            </>
+          }
+        />
+        <Route
+          path="/Gitt"
+          element={
+            <>
+              <HomeButton />
+              <Gitt />
+              <Scroll />
+            </>
+          }
+        />
+        <Route
+          path="/SNS"
+          element={
+            <>
+              <HomeButton />
+              <SNSAPP />
+              <Scroll />
+            </>
+          }
+        />
+        <Route
+          path="/Elder"
+          element={
+            <>
+              <HomeButton />
+              <Scroll />
+              <Elder />
+            </>
+          }
+        />
+        <Route
+          path="/IoT"
+          element={
+            <>
+              <HomeButton />
+              <IoT />
+              <Scroll />
             </>
           }
         />

@@ -9,20 +9,19 @@ function Intern() {
           <h2 className="main-title">
             A社の７Daysエンジニアインターンを受けて
           </h2>
-          <div className="content">
-            <div className="text-box">
-              <h3>1日目</h3>
-              <h2>環境設定</h2>
 
-              <p>AWSのLambda/API Gateway/DynamoDBについて</p>
-              <ul>
-                <li>Githubで当社のTokenを取得。Cloud9を起動</li>
-                <li>
-                  Cloud9のターミナルでclone(git clone
-                  https://Token@github.com/○○)
-                </li>
-              </ul>
-            </div>
+          <div className="text-box">
+            <h3>1日目</h3>
+            <h2>環境設定</h2>
+
+            <p>AWSのLambda/API Gateway/DynamoDBについて</p>
+            <ul>
+              <li>Githubで当社のTokenを取得。Cloud9を起動</li>
+              <li>
+                Cloud9のターミナルでclone(git clone https://Token@github.com/○○)
+              </li>
+              <li>Cloud9のターミナルで./utils.sh lambda_deploy ○○.jsでデプロイ</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -31,14 +30,18 @@ function Intern() {
       <section className="sec-02">
         <div className="container">
           <h3 className="section-title">API構築</h3>
-          <div className="content">
-            <div className="info">
-              <li>
-                AWS API
-                GatewayでHTTPリクエストとLambdaをつなげる（APIのデプロイ）
-              </li>
-            </div>
-          </div>
+
+          <li>
+            AWS API GatewayでHTTPリクエストとLambdaをつなげる（APIのデプロイ）
+          </li>
+          <h2>API Gatewayの構築手順</h2>
+          <li>API作成ボタン</li>
+          <li>HTTPAPIで構築ボタン</li>
+          <li>統合を追加→Lambdaを選択→関数入力→API名入力→ルートの設定</li>
+          <h2>CloudWatch</h2>
+          <li>
+            該当するLambda関数を選択→モニタリング→ログの表示でログが見れる
+          </li>
         </div>
       </section>
 
